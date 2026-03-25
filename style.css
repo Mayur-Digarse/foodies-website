@@ -1,0 +1,189 @@
+/* Root Variables */
+:root {
+    --primary-color: #ff6b00;
+    --primary-gradient: linear-gradient(135deg, #ff6b00 0%, #ff9100 100%);
+    --secondary-dark: #212529;
+    --white: #ffffff;
+    --bg-light: #f9d04c;
+    --transition: all 0.3s ease-in-out;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: #444;
+}
+
+/* Headings */
+h1,
+h2,
+h4,
+.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.wrapper {
+    padding: 80px 0;
+}
+
+/* ================= NAVBAR ================= */
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: var(--transition);
+}
+
+/* Scroll Effect */
+.navigation-wrap.scroll-on {
+    background: rgba(255, 164, 7, 0.85);
+
+    /* Blur effect (for all browsers) */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* Smooth size change */
+    padding: 10px 0;
+
+    /* Border */
+    border-bottom: 2px solid var(--primary-color);
+
+    /* Smooth transition */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Nav Links */
+.nav-link {
+    color: var(--secondary-dark) !important;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* ================= BUTTONS ================= */
+.main-btn {
+    background: var(--primary-gradient);
+    color: var(--white) !important;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(255, 107, 0, 0.2);
+    transition: var(--transition);
+}
+
+.main-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255, 107, 0, 0.4);
+}
+
+.white-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color) !important;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.white-btn:hover {
+    background: var(--primary-color);
+    color: var(--white) !important;
+}
+
+/* ================= BANNER ================= */
+.top-banner {
+    padding: 180px 0 120px;
+    background: url('../images/bg/bg-1.jpg') no-repeat center center / cover;
+}
+
+/* ================= COUNTER ================= */
+.counter-section {
+    background: var(--primary-gradient);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.counter-section h2 {
+    font-size: 3rem;
+    color: #ffe600;
+}
+
+/* ================= CARD / FOOD ================= */
+.card {
+    border-radius: 15px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    margin: 15px 0;
+}
+
+/* ================= NAVBAR TOGGLER ================= */
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.6rem;
+    transition: var(--transition);
+}
+
+.navbar-toggler i {
+    color: var(--primary-color) !important;
+}
+
+.navbar-toggler:hover i {
+    transform: scale(1.1);
+}
+
+/* Remove blue outline */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #000;
+    color: #fff;
+}
+
+.footer-social a {
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .top-banner {
+        padding: 120px 0 80px;
+        text-align: center;
+    }
+
+    .navigation-wrap {
+        background: #fff;
+    }
+}

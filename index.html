@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies | Orange Premium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Foodies logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    style="border: none; outline: none; box-shadow: none;">
+                    <i class="fas fa-bars" style="color: #ff6b00; font-size: 28px;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#explore-food">Explore Foods</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonial">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li><button class="main-btn ms-lg-3">1200 345 123</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container-fluid px-0 top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <h1>Good food choices are <span class="text-orange">investments.</span></h1>
+                        <p>Enjoy the finest meals prepared with organic ingredients. We bring taste and health to your
+                            table.</p>
+                        <div class="mt-4">
+                            <button class="main-btn">Order now <i class="fas fa-shopping-basket ps-3"></i></button>
+                            <button class="white-btn ms-lg-4 mt-lg-0 mt-4">Learn More <i
+                                    class="fas fa-angle-right ps-3"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter" class="counter-section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3 mb-lg-0 mb-5">
+                    <h2><span id="count1">0</span>+</h2>
+                    <p>SAVINGS</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-5">
+                    <h2><span id="count2">0</span>+</h2>
+                    <p>PHOTOS</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-5">
+                    <h2><span id="count3">0</span>+</h2>
+                    <p>ROCKETS</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-5">
+                    <h2><span id="count4">0</span>+</h2>
+                    <p>GLOBES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="wrapper">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 col-md-12">
+                    <img src="images/img/img-1.png" class="img-fluid rounded-4 shadow" alt="Food Image 1">
+                </div>
+                <div class="col-lg-5 col-md-12 text-sec mt-lg-0 mt-5">
+                    <h2>We pride ourselves on making real food from the best ingredients.</h2>
+                    <p>Our chefs use hand-picked vegetables and fresh dairy to ensure every bite is a celebration of
+                        flavor.</p>
+                    <button class="main-btn mt-4">Learn More</button>
+                </div>
+            </div>
+            <div class="row align-items-center food-type pt-5">
+                <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+                    <h2>We make everything by hand with the best ingredients.</h2>
+                    <ul class="list-unstyled py-3">
+                        <li><i class="fas fa-check text-orange me-2"></i> Freshly Baked Daily</li>
+                        <li><i class="fas fa-check text-orange me-2"></i> Organic Vegetables</li>
+                        <li><i class="fas fa-check text-orange me-2"></i> No Artificial Flavors</li>
+                    </ul>
+                    <button class="main-btn mt-4">Learn More</button>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <img src="images/img/img-2.png" class="img-fluid rounded-4 shadow" alt="Food Image 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore-food" class="wrapper bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Explore Our Foods</h2>
+                <p>Taste the richness of our special menu crafted just for you.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm p-3">
+                        <img src="images/img/img-3.jpg" class="img-fluid rounded-3" alt="Sandwich">
+                        <h4 class="mt-3">Rainbow Vegetable Sandwich</h4>
+                        <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                        <span class="price">$10.50 <del class="text-muted">$11.70</del></span>
+                        <button class="main-btn mt-3">Order Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm p-3">
+                        <img src="images/img/img-4.jpg" class="img-fluid rounded-3" alt="Burger">
+                        <h4 class="mt-3">Vegetarian Burger</h4>
+                        <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                        <span class="price">$9.20 <del class="text-muted">$10.50</del></span>
+                        <button class="main-btn mt-3">Order Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm p-3">
+                        <img src="images/img/img-5.jpg" class="img-fluid rounded-3" alt="French Toast">
+                        <h4 class="mt-3">Raspberry Stuffed French Toast</h4>
+                        <p>Time: 10 - 15 Minutes | Serves: 1</p>
+                        <span class="price">$12.50 <del class="text-muted">$13.20</del></span>
+                        <button class="main-btn mt-3">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <div class="footer-social mb-4">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>© 2026. Foodies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
